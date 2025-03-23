@@ -5,8 +5,8 @@ Jokenpo mais conhecido como Pedra Papel Tesoura, jogo onde você enfrenta o comp
 O computador é o campo em vermelho e o usuário (você) é o campo em verde.
 
 ## Funcionalidades
-- Selecione a opçao e jogue contra o computador.
 - Selecione os campos em verde.
+- Reiniciar o jogo.
 
 ## Tecnologias Usadas
 - **HTML**: Estrutura da página.
