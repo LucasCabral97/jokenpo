@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgb(228, 228, 211);
+}
+
+h2 {
+    margin: 5px;
+}
+
+@media only screen and (max-width :600px) {
+
+    #div_jogo {
+        position: absolute;
+        width: 200px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width :601px) {
+
+    #div_jogo {
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+#div_jogo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px repeat(3, 1fr);
+    margin: auto;
+    grid-template-areas:
+        "jogador . jogapc"
+        "pedraUsuario  comandos  pedraPC"
+        "papelUsuario  versus  papelPC"
+        "tesouraUsuario . tesouraPC";
+
+}
+
+#papel_usuario {
+    grid-area: papelUsuario;
+}
+
+#pedra_usuario {
+    grid-area: pedraUsuario;
+}
+
+#tesoura_usuario {
+    grid-area: tesouraUsuario;
+}
+
+#papel_pc {
+    grid-area: papelPC;
+}
+
+#pedra_pc {
+    grid-area: pedraPC;
+}
+
+#tesoura_pc {
+    grid-area: tesouraPC;
+}
+
+#versus {
+    grid-area: versus;
+}
+
+#pontJogador {
+    grid-area: jogador;
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#pontPc {
+    grid-area: jogapc;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#comandos {
+    grid-area: comandos;
+}
+
+
+.jogador {
+    transition: 0.5s;
+    margin: 15px;
+    width: 100px;
+    border: 5px solid green;
+    border-radius: 50px;
+    opacity: 0.5;
+
+}
+
+.computador {
+    transition: 0.5s;
+    transition: 500;
+    margin: 15px;
+    width: 100px;
+    border: 5px solid red;
+    border-radius: 50px;
+    opacity: 0.5;
+
+}
+
+#versus {
+    width: 150px;
+}
+
+#comandos button {
+    border-radius: 10px;
+    padding: 5px;
+    width: 120px;
+    margin: 15px auto auto auto;
+    border: 2px solid blue;
+    background: rgb(139, 139, 207);
+    color: white;
+    font-weight: bold;
+}
+
+.jogador:hover {
+    opacity: 1;
+}
+
+#comandos button:hover {
+    width: 150px;
+    height: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.defaultUS {
+    translate: 0px;
+    scale: 0px;
+    opacity: 0.5;
+    width: 100px;
+    pointer-events: all;
+}
+
+.defaultPC {
+    translate: 0px;
+    scale: 0px;
+    opacity: 0.5;
+    width: 100px;
+}
+
+.jogadaUsuario {
+    opacity: 1;
+    width: 120px;
+    translate: 100px;
+    scale: 100px;
+}
+
+.jogadaPC {
+    opacity: 1;
+    width: 120px;
+    translate: -100px;
+    scale: -100px;
+}
+
+#texto {
+    margin-bottom: 20px;
+}
