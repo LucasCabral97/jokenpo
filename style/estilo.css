@@ -6,8 +6,12 @@
     background: rgb(228, 228, 211);
 }
 
-h2 {
-    margin: 5px;
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width :600px) {
@@ -27,6 +31,7 @@ h2 {
     }
 
 }
+
 
 #div_jogo {
     display: grid;
